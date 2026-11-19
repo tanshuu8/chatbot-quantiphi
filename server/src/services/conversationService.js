@@ -54,7 +54,7 @@ export const saveMessage = async (conversationId, role, content) => {
     content,
   });
 
-  // Touch conversation's updatedAt
+  // Explicitly bump updatedAt so the conversation surfaces first in the sorted list
   await Conversation.findByIdAndUpdate(conversationId, {
     $set: { updatedAt: new Date() },
   });
