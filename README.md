@@ -5,6 +5,7 @@ A production-grade, full-stack AI Chat Assistant built with **React**, **Vite**,
 ---
 
 ## 🎨 Apple-Inspired Glassmorphic Design
+## 🎨 Apple-Inspired Glassmorphic Design
 
 - **Aesthetic**: Frosted translucent glass panels (`backdrop-blur-2xl`, `bg-white/80`, `border-white/90`), subtle ambient Apple Intelligence background glow spheres (orange, amber, and electric blue), and clean micro-interactions.
 - **Palette**:
