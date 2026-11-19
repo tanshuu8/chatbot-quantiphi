@@ -17,7 +17,7 @@ app.use(
 );
 app.use(express.json());
 
-// Basic health check
+// Health check endpoint — used by test-suite.js and monitoring tools to verify the server is up
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     status: 'ok',
