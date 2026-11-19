@@ -118,7 +118,7 @@ chatbot-quantiphi/
 ### Conversations
 
 | Method | Endpoint | Description |
-|---|---|---|
+|--------|----------|-------------|
 | `POST` | `/api/conversations` | Create a new conversation with optional `{ title, tone }` |
 | `GET` | `/api/conversations` | List all conversations sorted by `updatedAt: -1` |
 | `GET` | `/api/conversations/:id` | Fetch conversation details and all associated messages |
