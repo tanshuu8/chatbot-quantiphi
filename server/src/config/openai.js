@@ -8,7 +8,6 @@ const __dirname = path.dirname(__filename);
 
 // Explicitly load .env from server directory as well as current working directory
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
-dotenv.config();
 
 /**
  * Creates/returns the configured OpenAI instance dynamically
