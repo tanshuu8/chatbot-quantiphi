@@ -1,3 +1,6 @@
+/**
+ * Catches all unmatched routes and responds with a 404 JSON error.
+ */
 export const notFoundHandler = (req, res, next) => {
   res.status(404).json({
     success: false,
