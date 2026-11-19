@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 
+/**
+ * Conversation — stores the chat session title, selected tone, and timestamps.
+ * Messages are stored separately in the Message collection.
+ */
 const ConversationSchema = new mongoose.Schema(
   {
     title: {
