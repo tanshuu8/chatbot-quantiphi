@@ -1,6 +1,7 @@
 {
   "name": "ai-chat-assistant",
   "version": "1.0.0",
+  "description": "Spark AI — full-stack AI chat assistant with SSE streaming, MongoDB persistence, and three selectable tones",
   "private": true,
   "scripts": {
     "server:install": "cd server && npm install",
