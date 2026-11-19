@@ -158,8 +158,8 @@ MONGODB_URI=mongodb://127.0.0.1:27017/ai-chat-assistant
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_MODEL=gpt-4o-mini
 
-# Optional custom base URL for OpenAI-compatible providers (Groq, Ollama, etc.):
-# OPENAI_BASE_URL=https://api.openai.com/v1
+# Optional: custom base URL for OpenAI-compatible providers (Groq, Ollama, etc.):
+# OPENAI_BASE_URL=https://api.groq.com/openai/v1
 ```
 
 ### 4. Running the Application
