@@ -23,7 +23,7 @@ export const getSystemInstructionForTone = (tone) => {
  * @param {string} options.tone - 'Professional' | 'Casual' | 'Concise'
  * @param {Array<{role: string, content: string}>} options.history - Message history
  * @param {AbortSignal} [options.signal] - AbortSignal for cancellation
- * @returns {Promise<AsyncIterable>} - OpenAI stream iterable
+ * @returns {Promise<Stream>} OpenAI SDK chat completion stream iterable
  */
 export const createChatCompletionStream = async ({
   tone = 'Professional',
