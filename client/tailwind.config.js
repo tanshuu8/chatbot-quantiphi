@@ -28,7 +28,9 @@ export default {
         ],
       },
       animation: {
+        // pulse-subtle: used on loading skeleton/spinner states
         'pulse-subtle': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        // blink: used for the streaming cursor animation
         'blink': 'blink 1s infinite',
       },
       keyframes: {
