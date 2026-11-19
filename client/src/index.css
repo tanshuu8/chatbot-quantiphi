@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-800 bg-[#fafafa];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Apple-style Frosted Glass Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.7);
+}
+
+/* Ambient Apple Intelligence Glowing Orbs in background */
+.ambient-glow-orange {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  top: -100px;
+  right: -50px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.12) 0%, rgba(251, 191, 36, 0.06) 50%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-glow-blue {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  bottom: -120px;
+  left: -80px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.05) 50%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-glow-yellow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  top: 40%;
+  left: 30%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 60%);
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Glowing cursor animation for streaming */
+@keyframes spark-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 7px;
+  height: 15px;
+  margin-left: 3px;
+  background: linear-gradient(180deg, #f97316 0%, #2563eb 100%);
+  vertical-align: middle;
+  animation: spark-blink 0.85s infinite;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(249, 115, 22, 0.4);
+}
