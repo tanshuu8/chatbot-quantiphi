@@ -51,6 +51,7 @@ export const createChatCompletionStream = async ({
       model,
       messages,
       stream: true,
+      // Temperature: Concise=0.3 (focused), Professional=0.6 (balanced), Casual=0.8 (creative)
       temperature: tone === 'Concise' ? 0.3 : tone === 'Casual' ? 0.8 : 0.6,
     },
     { signal }
