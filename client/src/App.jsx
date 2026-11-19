@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import ChatArea from './components/ChatArea';
 
+// ChatApp is an inner component so it can consume ChatProvider context via useChat hooks
 function ChatApp() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
