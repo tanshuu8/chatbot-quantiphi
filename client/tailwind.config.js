@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        // brand palette — used for subtle UI accents (available as bg-brand-*, text-brand-*)
         brand: {
           50: '#f5f7fb',
           100: '#ebf0f8',
