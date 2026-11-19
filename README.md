@@ -172,7 +172,7 @@ npm run server
 # Start frontend dev server (port 5173):
 npm run client
 
-# Run the 25 automated live tests:
+# Run the 25 automated live tests (requires backend + MongoDB running):
 npm test
 ```
 
