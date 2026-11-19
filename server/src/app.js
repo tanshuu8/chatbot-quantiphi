@@ -7,6 +7,7 @@ import { notFoundHandler, errorHandler } from './middleware/errorHandler.js';
 const app = express();
 
 // Middlewares
+// NOTE: origin '*' is acceptable for local development; restrict to your domain in production
 app.use(
   cors({
     origin: '*',
