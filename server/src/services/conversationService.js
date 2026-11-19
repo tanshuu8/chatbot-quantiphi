@@ -68,7 +68,7 @@ export const getMessagesForContext = async (conversationId, limit = 20) => {
     .limit(limit)
     .lean();
 
-  // Reverse so they are in chronological order
+  // Fetched desc for efficient LIMIT, then reversed to restore chronological order for the AI
   return messages.reverse().map((m) => ({
     role: m.role,
     content: m.content,
