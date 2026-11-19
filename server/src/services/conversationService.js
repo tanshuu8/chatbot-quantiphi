@@ -76,8 +76,11 @@ export const getMessagesForContext = async (conversationId, limit = 20) => {
 };
 
 /**
- * Remove the last assistant message from a conversation so regenerate can rerun
- * the prompt without creating duplicate assistant messages or duplicating user messages.
+ * Remove the last assistant message from a conversation so the AI can regenerate
+ * a fresh response for the same user prompt, without duplicating messages.
+ * @param {string} conversationId - The MongoDB ObjectId of the conversation
+ * @returns {Promise<Message>} The last user message that will be used as the regeneration prompt
+ * @throws {Error} If no messages exist or no user message is found
  */
 export const prepareForRegeneration = async (conversationId) => {
   const messages = await Message.find({ conversationId })
