@@ -125,7 +125,7 @@ export const updateTitleIfDefault = async (conversationId, firstMessageText) => 
   if (!conversation) return null;
 
   if (conversation.title === 'New Chat') {
-    // Generate clean concise title from user's message
+    // Truncate to 36 characters with ellipsis to keep sidebar titles readable
     const clean = firstMessageText.replace(/\s+/g, ' ').trim();
     const title = clean.length > 36 ? `${clean.slice(0, 36)}...` : clean;
     conversation.title = title || 'New Chat';
