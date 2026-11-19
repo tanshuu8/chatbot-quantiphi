@@ -45,7 +45,7 @@ export const ChatProvider = ({ children }) => {
       const list = await conversationApi.list();
       setConversations(list);
 
-      // Always start fresh on load/refresh — show empty New Chat hero
+      // Always start with the empty hero on refresh so users see the welcome screen, not a stale conversation
       setCurrentConversationId(null);
       setCurrentConversation(null);
       setTone('Professional');
