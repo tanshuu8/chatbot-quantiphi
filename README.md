@@ -178,4 +178,4 @@ npm test
 ```bash
 npm run build
 ```
-Optimized static production assets are compiled to `client/dist/`.
+Optimized static production assets are compiled to `client/dist/` (git-ignored, not committed).
