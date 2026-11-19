@@ -134,7 +134,7 @@ chatbot-quantiphi/
 ## ⚙️ Installation & Setup Instructions
 
 ### 1. Prerequisites
-- **Node.js** (v18.0.0 or higher)
+- **Node.js** (v20.0.0 or higher)
 - **MongoDB** running locally on port 27017 or a MongoDB Atlas URI
 
 ### 2. Install Dependencies
