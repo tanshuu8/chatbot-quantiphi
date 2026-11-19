@@ -28,7 +28,7 @@ export const errorHandler = (err, req, res, next) => {
     });
   }
 
-  // OpenAI API Key / Auth error
+  // API provider authentication error (OpenAI, Groq, or other compatible providers)
   if (err.status === 401 || err.code === 'invalid_api_key') {
     return res.status(401).json({
       success: false,
