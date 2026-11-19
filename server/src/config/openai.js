@@ -10,8 +10,9 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 /**
- * Creates/returns the configured OpenAI instance dynamically
- * to ensure latest environment variables are always respected.
+ * Creates and returns a configured OpenAI client instance.
+ * Reads environment variables at call time so the latest values are always used.
+ * @returns {OpenAI} Configured OpenAI (or OpenAI-compatible) client instance
  */
 export const getOpenAIClient = () => {
   const apiKey = process.env.OPENAI_API_KEY;
