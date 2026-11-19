@@ -24,6 +24,7 @@ A production-grade, full-stack AI Chat Assistant built with **React**, **Vite**,
 4. **Three Selectable Response Tones**:
    - **Professional**: `"Respond in a professional, structured, and clear manner."` (Electric Blue)
    - **Casual**: `"Respond naturally, conversationally, and in a friendly tone."` (Warm Orange)
+   *Each tone directly configures the AI system prompt sent to the model.*
    - **Concise**: `"Respond briefly, directly, and focus on essential information."` (Radiant Amber)
    *Tones are persisted with each conversation in MongoDB and dynamically affect the AI model generation.*
 5. **Regenerate Response**: Re-generates a new assistant response for the previous user message without duplicating the user prompt.
