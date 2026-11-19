@@ -91,7 +91,9 @@ export const ChatProvider = ({ children }) => {
   };
 
   /**
-   * Create a new conversation
+   * Create a new blank conversation and set it as the active view.
+   * @param {string} [preferredTone] - Initial tone; defaults to the current tone
+   * @returns {Promise<Object|undefined>} The newly created conversation object
    */
   const createNewConversation = async (preferredTone = tone) => {
     // Abort any ongoing stream
