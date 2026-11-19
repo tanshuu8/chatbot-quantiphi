@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 
+/**
+ * Message — a single chat turn belonging to a Conversation.
+ * role is 'user' | 'assistant' | 'system'; content is the full message text.
+ */
 const MessageSchema = new mongoose.Schema(
   {
     conversationId: {
