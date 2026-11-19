@@ -79,6 +79,7 @@ chatbot-quantiphi/
 │   ├── .env.example
 │   ├── .env
 │   ├── test-suite.js              # 25 automated live assertions
+│   ├── .gitignore              # 25 automated live assertions
 │   └── package.json
 ├── client/
 │   ├── src/
