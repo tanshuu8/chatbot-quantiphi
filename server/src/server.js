@@ -10,7 +10,7 @@ const startServer = async () => {
   try {
     await connectDB();
     app.listen(PORT, () => {
-      console.log(`[Server] AI Chat Assistant backend listening on port ${PORT}`);
+      console.log(`[Server] Spark AI backend listening on port ${PORT}`);
     });
   } catch (err) {
     console.error(`[Server] Failed to start server:`, err);
