@@ -170,7 +170,9 @@ export const ChatProvider = ({ children }) => {
   };
 
   /**
-   * Send a message and stream response
+   * Send a user message and stream the AI response via SSE.
+   * Creates a new conversation automatically if none is active.
+   * @param {string} messageText - The user's input text
    */
   const sendMessage = async (messageText) => {
     if (!messageText || !messageText.trim() || isStreaming) return;
