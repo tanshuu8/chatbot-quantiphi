@@ -146,7 +146,7 @@ npm run install:all
 
 ### 3. Environment Variables
 
-Create `.env` in `server/` (and root if running from root):
+Create `.env` inside the `server/` directory:
 
 ```env
 PORT=5000
